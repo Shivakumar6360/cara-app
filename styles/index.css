@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+header{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+}
+div{
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+ul li{
+    padding: 0px 20px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-size: 500;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+li a.active , li a:hover{
+    color: #088178;
+}
+li a.active::after , li a:hover::after{
+    content: "";
+    width: 60%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+.hero{
+    background: url(../multimedia/hero4.png);
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    position: relative;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+}
+
+.hero h4{
+    padding: 15px;
+    font-size: 20px;
+
+}
+.hero h1{
+    color: #088178;
+
+}
+
+.hero button{
+    background-image: url(../multimedia/button.png);
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
